@@ -1,0 +1,141 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('th.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Glassmorphism Effect */
+.container {
+    background: rgba(0, 0, 0, 0.6); /* Slightly lighter background */
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px); /* More intense blur for clearer separation */
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Stylish Labels */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    display: inline-block;
+    color: #FFD700; /* Gold color for labels */
+}
+
+/* Input and Select Fields */
+input,
+select {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    color: rgb(14, 215, 128);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown List Customization */
+select {
+    background-color: rgba(255, 255, 255, 0.15); /* Darker background for the dropdown */
+    color: rgb(13, 199, 94);
+    font-size: 16px;
+}
+
+/* Input and Select Hover and Focus */
+input:hover, select:hover, input:focus, select:focus {
+    background-color: rgba(255, 255, 255, 0.4); /* Lighter background on hover/focus */
+    outline: none;
+    border: 2px solid #4CAF50; /* Green border for focus state */
+}
+
+/* Button Styling */
+button {
+    background-color: #228f18; 
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #13e91a; /* Darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Result Text */
+h3 {
+    font-size: 22px;
+    color: #2b785b;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Loading State */
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #FFD700; /* Gold color */
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
